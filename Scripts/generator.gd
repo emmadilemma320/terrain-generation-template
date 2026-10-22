@@ -36,4 +36,8 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 		
 		decor_type_parent.add_child(new_item)
 		
+		var rand_x = randf_range(-settings.width, settings.width)
+		var rand_z = randf_range(-settings.width, settings.width)
+		new_item.position = Vector3(rand_x, 0, rand_z)
+		
 	
