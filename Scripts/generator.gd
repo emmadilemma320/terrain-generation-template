@@ -12,8 +12,10 @@ func generate_forest() -> void:
 	if settings.radius == 0:
 		return
 	area = 2**PI*(settings.radius**2)
-	
 	print(area)
+	
+	forest = Node3D.new()
+	add_child(forest)
 	
 func generate_decor(type: DecorTypeSettings) -> void:
 	pass
