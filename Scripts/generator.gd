@@ -9,7 +9,7 @@ func _ready() -> void:
 	generate_forest()
 	
 func generate_forest() -> void:
-	if settings.radius == 0:
+	if settings.radius == 0 or settings.decor.is_empty():
 		return
 	area = 2**PI*(settings.radius**2)
 	print(area)
@@ -28,5 +28,4 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	var decor_type_parent = Node3D.new()
 	decor_type_parent.name = decor_settings.name + " parent"
 	forest.add_child(decor_type_parent)
-	print(forest.get_child(0))
 	
