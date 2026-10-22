@@ -1,6 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bciocxr7ssvlh"]
-
-[ext_resource type="Texture2D" uid="uid://bggkv385cvylj" path="res://Assets/Materials-Textures/forest_texture.png" id="1_hatos"]
-
-[resource]
-albedo_texture = ExtResource("1_hatos")
