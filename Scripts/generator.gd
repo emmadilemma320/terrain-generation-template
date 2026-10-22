@@ -15,6 +15,7 @@ func generate_forest() -> void:
 	print(area)
 	
 	forest = Node3D.new()
+	forest.name = "Generic Forest" if settings.name.is_empty() else settings.name
 	add_child(forest)
 	
 	for type in settings.decor:
