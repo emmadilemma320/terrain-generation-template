@@ -15,7 +15,7 @@
 [sub_resource type="Resource" id="Resource_5ukr8"]
 script = ExtResource("2_5ukr8")
 name = "Trees"
-density = 0.3
+density = 0.2
 rotate = true
 resize = true
 uniform_scale = true
@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://cym7y1elifhsb"
 
 [sub_resource type="Resource" id="Resource_5a7ea"]
 script = ExtResource("6_0fj1v")
-width = 8.0
+width = 10.0
 name = "Forest"
 decor = Array[ExtResource("2_5ukr8")]([SubResource("Resource_5ukr8")])
 metadata/_custom_type_script = "uid://djox8lhi7y2mb"
