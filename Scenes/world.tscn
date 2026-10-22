@@ -10,6 +10,10 @@
 script = ExtResource("2_5ukr8")
 name = "Trees"
 density = 0.2
+rotate = true
+resize = true
+uniform_scale = true
+scale_min = 0.75
 assets = Array[PackedScene]([ExtResource("3_o06y3"), ExtResource("4_k7acu")])
 metadata/_custom_type_script = "uid://cym7y1elifhsb"
 
