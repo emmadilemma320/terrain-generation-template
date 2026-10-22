@@ -11,5 +11,5 @@ func _ready() -> void:
 func generate_forest() -> void:
 	pass
 	
-func generate_decor(type: DecorTypeSettings) -> void:
+func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	pass
