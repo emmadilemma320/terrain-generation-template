@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bduiq7ckj2ww2"]
 
+[ext_resource type="Script" uid="uid://cetu0hdoirgvl" path="res://Scripts/generator.gd" id="1_3lb5q"]
+
 [node name="Generator" type="Node3D" unique_id=1996588801]
+script = ExtResource("1_3lb5q")
