@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://rn61tredcoq8" path="res://Assets/Nature/Trees/Tree_1_B_Color1.gltf" id="3_o06y3"]
 [ext_resource type="PackedScene" uid="uid://dfjvav2hg52s7" path="res://Assets/Nature/Trees/Tree_Bare_1_A_Color1.gltf" id="4_k7acu"]
 [ext_resource type="Script" uid="uid://djox8lhi7y2mb" path="res://Scripts/Resources/generator-settings.gd" id="6_0fj1v"]
+[ext_resource type="PackedScene" uid="uid://8hkr6fbdg1d2" path="res://Assets/Nature/Ground/floor_dirt_large.gltf" id="6_5ukr8"]
 
 [sub_resource type="Resource" id="Resource_8su6d"]
 script = ExtResource("2_5ukr8")
@@ -27,6 +28,273 @@ metadata/_custom_type_script = "uid://djox8lhi7y2mb"
 
 [node name="World" type="Node3D" unique_id=1813896025]
 
+[node name="Camera3D" type="Camera3D" parent="." unique_id=984029267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0848103, 14.574364)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=735460808]
+
 [node name="Generator" parent="." unique_id=1996588801 instance=ExtResource("1_a02cp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2169838, 0.04297042, 0.9336587)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 settings = SubResource("Resource_3lb5q")
+
+[node name="Ground" type="Node3D" parent="." unique_id=639373127]
+
+[node name="group-12,0" type="Node3D" parent="Ground" unique_id=907337204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+
+[node name="floor_dirt_large4,4" parent="Ground/group-12,0" unique_id=50398074 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group-12,0" unique_id=781480398 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group-12,0" unique_id=178983357 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group-12,0" unique_id=1440896203 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group-12,0" unique_id=1008210635 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group-12,0" unique_id=524824239 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group-12,0" unique_id=15846659 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group-12,0" unique_id=1185019561 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group-12,0" unique_id=1539160756 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group-12,12" type="Node3D" parent="Ground" unique_id=1361710406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group-12,12" unique_id=647459901 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group-12,12" unique_id=388685167 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group-12,12" unique_id=1476248332 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group-12,12" unique_id=1475324394 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group-12,12" unique_id=203874626 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group-12,12" unique_id=645766420 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group-12,12" unique_id=8267095 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group-12,12" unique_id=444124143 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group-12,12" unique_id=1778367713 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group-12,-12" type="Node3D" parent="Ground" unique_id=33392893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group-12,-12" unique_id=550442426 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group-12,-12" unique_id=740708172 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group-12,-12" unique_id=400643846 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group-12,-12" unique_id=1423699208 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group-12,-12" unique_id=1003262107 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group-12,-12" unique_id=1368945350 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group-12,-12" unique_id=292990398 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group-12,-12" unique_id=847986802 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group-12,-12" unique_id=349768033 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group0,0" type="Node3D" parent="Ground" unique_id=1122338851]
+
+[node name="floor_dirt_large4,4" parent="Ground/group0,0" unique_id=1973587930 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group0,0" unique_id=1227207775 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group0,0" unique_id=2003323731 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group0,0" unique_id=1637555805 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group0,0" unique_id=918303223 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group0,0" unique_id=578470875 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group0,0" unique_id=765337299 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group0,0" unique_id=67949331 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group0,0" unique_id=2145170105 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group0,12" type="Node3D" parent="Ground" unique_id=1319300810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group0,12" unique_id=1281742225 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group0,12" unique_id=139423009 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group0,12" unique_id=1020580092 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group0,12" unique_id=1819263778 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group0,12" unique_id=1578078926 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group0,12" unique_id=1145765199 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group0,12" unique_id=2092431918 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group0,12" unique_id=318719053 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group0,12" unique_id=32928072 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group0,-12" type="Node3D" parent="Ground" unique_id=175230192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group0,-12" unique_id=1327582773 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group0,-12" unique_id=193866929 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group0,-12" unique_id=1940826943 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group0,-12" unique_id=752065096 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group0,-12" unique_id=1310768812 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group0,-12" unique_id=1812667503 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group0,-12" unique_id=1862151459 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group0,-12" unique_id=206752841 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group0,-12" unique_id=1323335547 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group12,0" type="Node3D" parent="Ground" unique_id=1265897427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="floor_dirt_large4,4" parent="Ground/group12,0" unique_id=1292678654 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group12,0" unique_id=2145798434 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group12,0" unique_id=1359662304 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group12,0" unique_id=13400668 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group12,0" unique_id=280891042 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group12,0" unique_id=2025229593 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group12,0" unique_id=417972198 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group12,0" unique_id=715043135 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group12,0" unique_id=10713342 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group12,12" type="Node3D" parent="Ground" unique_id=423665465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group12,12" unique_id=948388452 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group12,12" unique_id=2005295475 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group12,12" unique_id=781279644 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group12,12" unique_id=897618990 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group12,12" unique_id=1818703112 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group12,12" unique_id=700382978 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group12,12" unique_id=1068544475 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group12,12" unique_id=1267663035 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group12,12" unique_id=1662352917 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="group12,-12" type="Node3D" parent="Ground" unique_id=596877179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
+
+[node name="floor_dirt_large4,4" parent="Ground/group12,-12" unique_id=213354516 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="floor_dirt_large4,0" parent="Ground/group12,-12" unique_id=1262377370 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="floor_dirt_large4,-4" parent="Ground/group12,-12" unique_id=1444036389 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="floor_dirt_large0,4" parent="Ground/group12,-12" unique_id=1783069768 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="floor_dirt_large0,0" parent="Ground/group12,-12" unique_id=2061884582 instance=ExtResource("6_5ukr8")]
+
+[node name="floor_dirt_large0,-4" parent="Ground/group12,-12" unique_id=1721395763 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="floor_dirt_large-4,-4" parent="Ground/group12,-12" unique_id=1424477355 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="floor_dirt_large-4,0" parent="Ground/group12,-12" unique_id=718540187 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="floor_dirt_large-4,4" parent="Ground/group12,-12" unique_id=1927182956 instance=ExtResource("6_5ukr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
