@@ -20,5 +20,5 @@ func generate_forest() -> void:
 	for type in settings.decor:
 		generate_decor(type)
 	
-func generate_decor(type: DecorTypeSettings) -> void:
+func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	pass
