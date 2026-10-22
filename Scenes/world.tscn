@@ -10,7 +10,21 @@
 [ext_resource type="PackedScene" uid="uid://cb6dowfmbmtph" path="res://Assets/Nature/Trees/Tree_4_B_Color1.gltf" id="6_7yui6"]
 [ext_resource type="PackedScene" uid="uid://bmnb4xbhvdf7u" path="res://Assets/Nature/Trees/Tree_Bare_1_C_Color1.gltf" id="8_c5t2i"]
 [ext_resource type="PackedScene" uid="uid://nyfl40xdl2ui" path="res://Assets/Nature/Trees/Tree_Bare_2_B_Color1.gltf" id="9_e0ngr"]
+[ext_resource type="PackedScene" uid="uid://rrluilyb75m3" path="res://Assets/Nature/Bushes/Bush_1_B_Color1.gltf" id="10_t2t4p"]
+[ext_resource type="PackedScene" uid="uid://bekpf0aqs40qe" path="res://Assets/Nature/Bushes/Bush_1_E_Color1.gltf" id="11_0pcbe"]
 [ext_resource type="PackedScene" uid="uid://8hkr6fbdg1d2" path="res://Assets/Nature/Ground/floor_dirt_large.gltf" id="11_kn0ld"]
+[ext_resource type="PackedScene" uid="uid://xihn35ihtkpt" path="res://Assets/Nature/Bushes/Bush_2_B_Color1.gltf" id="12_axeuq"]
+[ext_resource type="PackedScene" uid="uid://cvxe2muefcnjx" path="res://Assets/Nature/Bushes/Bush_3_B_Color1.gltf" id="13_1cojt"]
+[ext_resource type="PackedScene" uid="uid://smy3fskywe57" path="res://Assets/Nature/Bushes/Bush_4_B_Color1.gltf" id="14_yq1aw"]
+[ext_resource type="PackedScene" uid="uid://cr1b4wefdvq37" path="res://Assets/Nature/Bushes/Bush_4_D_Color1.gltf" id="15_pyn1s"]
+[ext_resource type="PackedScene" uid="uid://c0b2b11j3honp" path="res://Assets/Nature/Grass/Grass_1_D_Singlesided_Color1.gltf" id="16_1cojt"]
+[ext_resource type="PackedScene" uid="uid://n7ail0vjavxp" path="res://Assets/Nature/Grass/Grass_2_C_Singlesided_Color1.gltf" id="17_yq1aw"]
+[ext_resource type="PackedScene" uid="uid://dowa6ctxuakn5" path="res://Assets/Nature/Grass/Grass_2_D_Singlesided_Color1.gltf" id="18_pyn1s"]
+[ext_resource type="PackedScene" uid="uid://diu04p6bep1us" path="res://Assets/Nature/Rocks/Rock_1_C_Color1.gltf" id="19_i4fjy"]
+[ext_resource type="PackedScene" uid="uid://fqwrvlodvxpr" path="res://Assets/Nature/Rocks/Rock_1_D_Color1.gltf" id="20_pt3ps"]
+[ext_resource type="PackedScene" uid="uid://c43mbujovekn1" path="res://Assets/Nature/Rocks/Rock_3_B_Color1.gltf" id="21_hmc15"]
+[ext_resource type="PackedScene" uid="uid://cj4rwje3c51vl" path="res://Assets/Nature/Rocks/Rock_3_E_Color1.gltf" id="22_dt0r1"]
+[ext_resource type="PackedScene" uid="uid://crqehmvg12v05" path="res://Assets/Nature/Rocks/Rock_3_F_Color1.gltf" id="23_qebug"]
 
 [sub_resource type="Resource" id="Resource_5ukr8"]
 script = ExtResource("2_5ukr8")
@@ -24,17 +38,47 @@ scale_max = 2.0
 assets = Array[PackedScene]([ExtResource("3_o06y3"), ExtResource("4_ikia7"), ExtResource("6_5ukr8"), ExtResource("6_7yui6"), ExtResource("4_k7acu"), ExtResource("8_c5t2i"), ExtResource("9_e0ngr")])
 metadata/_custom_type_script = "uid://cym7y1elifhsb"
 
+[sub_resource type="Resource" id="Resource_ikia7"]
+script = ExtResource("2_5ukr8")
+name = "Bushes"
+density = 0.6
+resize = true
+uniform_scale = true
+scale_min = 0.5
+scale_max = 2.0
+assets = Array[PackedScene]([ExtResource("10_t2t4p"), ExtResource("11_0pcbe"), ExtResource("12_axeuq"), ExtResource("13_1cojt"), ExtResource("14_yq1aw"), ExtResource("15_pyn1s")])
+metadata/_custom_type_script = "uid://cym7y1elifhsb"
+
+[sub_resource type="Resource" id="Resource_7yui6"]
+script = ExtResource("2_5ukr8")
+name = "Grass"
+density = 2.0
+scale_min = 1.0
+scale_max = 2.0
+assets = Array[PackedScene]([ExtResource("16_1cojt"), ExtResource("17_yq1aw"), ExtResource("18_pyn1s")])
+metadata/_custom_type_script = "uid://cym7y1elifhsb"
+
+[sub_resource type="Resource" id="Resource_c5t2i"]
+script = ExtResource("2_5ukr8")
+name = "Rocks"
+density = 0.2
+resize = true
+scale_min = 0.25
+scale_max = 1.0
+assets = Array[PackedScene]([ExtResource("19_i4fjy"), ExtResource("20_pt3ps"), ExtResource("21_hmc15"), ExtResource("22_dt0r1"), ExtResource("23_qebug")])
+metadata/_custom_type_script = "uid://cym7y1elifhsb"
+
 [sub_resource type="Resource" id="Resource_5a7ea"]
 script = ExtResource("6_0fj1v")
 width = 10.0
 name = "Forest"
-decor = Array[ExtResource("2_5ukr8")]([SubResource("Resource_5ukr8")])
+decor = Array[ExtResource("2_5ukr8")]([SubResource("Resource_5ukr8"), SubResource("Resource_ikia7"), SubResource("Resource_7yui6"), SubResource("Resource_c5t2i")])
 metadata/_custom_type_script = "uid://djox8lhi7y2mb"
 
 [node name="World" type="Node3D" unique_id=1813896025]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=984029267]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0848103, 14.574364)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 14.574)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=735460808]
 
