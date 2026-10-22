@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://borv21mcie60f"]
 
-[ext_resource type="Script" uid="uid://cetu0hdoirgvl" path="res://Scripts/generator.gd" id="1_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://bduiq7ckj2ww2" path="res://Scenes/generator.tscn" id="1_a02cp"]
 
-[node name="Generator" type="Node3D" unique_id=1996588801]
-script = ExtResource("1_5a7ea")
+[node name="World" type="Node3D" unique_id=1813896025]
+
+[node name="Generator" parent="." unique_id=1996588801 instance=ExtResource("1_a02cp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2169838, 0.04297042, 0.9336587)
