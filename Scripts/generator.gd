@@ -21,4 +21,7 @@ func generate_forest() -> void:
 		generate_decor(type)
 	
 func generate_decor(decor_settings: DecorTypeSettings) -> void:
-	pass
+	var amount: int = int(area*decor_settings.density)
+	if amount == 0.0 or decor_settings.assets.is_empty(): 
+		return
+	
