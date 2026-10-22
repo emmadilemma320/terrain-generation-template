@@ -6,10 +6,13 @@ var area: float
 
 # _ready is automatically called by Godot when the scene is 
 func _ready() -> void:
-	pass
+	generate_forest()
 	
 func generate_forest() -> void:
-	area = (2*settings.radius*PI)**2
+	if settings.radius == 0:
+		return
+	area = 2**PI*(settings.radius**2)
+	
 	print(area)
 	
 func generate_decor(type: DecorTypeSettings) -> void:
