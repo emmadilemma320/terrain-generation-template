@@ -7,5 +7,4 @@ class_name GeneratorSettings
 @export var name: String
 
 @export_group("Decor Settings")
-@export var floor: PackedScene
 @export var decor: Array[DecorTypeSettings]
