@@ -42,6 +42,13 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 		
 		if decor_settings.rotate:
 			new_item.rotation.y = randf_range(0, 360)
-		print(decor_type_parent.get_child(i).rotation)
+		
+		if decor_settings.resize:
+			new_item.scale.y = randf_range(decor_settings.scale_min, decor_settings.scale_max)
+			if decor_settings.uniform_scale:
+				new_item.scale.x = new_item.scale.y
+				new_item.scale.z = new_item.scale.y
+		
+		print(decor_type_parent.get_child(i).scale)
 		
 	
