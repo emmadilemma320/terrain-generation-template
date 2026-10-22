@@ -29,3 +29,8 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	decor_type_parent.name = decor_settings.name + " parent"
 	forest.add_child(decor_type_parent)
 	
+	for i in amount:
+		var new_item = Node3D.new()
+		
+		decor_type_parent.add_child(new_item)
+	
