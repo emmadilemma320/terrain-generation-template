@@ -17,5 +17,8 @@ func generate_forest() -> void:
 	forest = Node3D.new()
 	add_child(forest)
 	
+	for type in settings.decor:
+		generate_decor(type)
+	
 func generate_decor(type: DecorTypeSettings) -> void:
 	pass
