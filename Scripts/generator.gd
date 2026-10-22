@@ -25,3 +25,8 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	if amount == 0.0 or decor_settings.assets.is_empty(): 
 		return
 	
+	var decor_type_parent = Node3D.new()
+	decor_type_parent.name = decor_settings.name + " parent"
+	forest.add_child(decor_type_parent)
+	print(forest.get_child(0))
+	
