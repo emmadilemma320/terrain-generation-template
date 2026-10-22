@@ -14,6 +14,7 @@ rotate = true
 resize = true
 uniform_scale = true
 scale_min = 0.75
+scale_max = 2.0
 assets = Array[PackedScene]([ExtResource("3_o06y3"), ExtResource("4_k7acu")])
 metadata/_custom_type_script = "uid://cym7y1elifhsb"
 
