@@ -31,7 +31,7 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 	
 	for i in amount:
 		var random_type: int = randi_range(0, decor_settings.assets.size()-1)
-		var new_item = decor_settings.assets[random_type].instantiate()
+		var new_item: Node = decor_settings.assets[random_type].instantiate()
 		new_item.name = decor_settings.name + " " + str(i+1)
 		
 		decor_type_parent.add_child(new_item)
