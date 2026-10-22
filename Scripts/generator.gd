@@ -40,4 +40,8 @@ func generate_decor(decor_settings: DecorTypeSettings) -> void:
 		var rand_z = randf_range(-settings.width, settings.width)
 		new_item.position = Vector3(rand_x, 0, rand_z)
 		
+		if decor_settings.rotate:
+			new_item.rotation.y = randf_range(0, 360)
+		print(decor_type_parent.get_child(i).rotation)
+		
 	
