@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://cym7y1elifhsb" path="res://Scripts/Resources/decor-type-settings.gd" id="2_5ukr8"]
 [ext_resource type="PackedScene" uid="uid://rn61tredcoq8" path="res://Assets/Nature/Trees/Tree_1_B_Color1.gltf" id="3_o06y3"]
 [ext_resource type="PackedScene" uid="uid://dfjvav2hg52s7" path="res://Assets/Nature/Trees/Tree_Bare_1_A_Color1.gltf" id="4_k7acu"]
-[ext_resource type="PackedScene" uid="uid://8hkr6fbdg1d2" path="res://Assets/Nature/Ground/floor_dirt_large.gltf" id="5_5v1tr"]
 [ext_resource type="Script" uid="uid://djox8lhi7y2mb" path="res://Scripts/Resources/generator-settings.gd" id="6_0fj1v"]
 
 [sub_resource type="Resource" id="Resource_8su6d"]
@@ -18,7 +17,6 @@ metadata/_custom_type_script = "uid://cym7y1elifhsb"
 script = ExtResource("6_0fj1v")
 radius = 5.0
 name = "Testing"
-floor = ExtResource("5_5v1tr")
 decor = Array[ExtResource("2_5ukr8")]([SubResource("Resource_8su6d")])
 metadata/_custom_type_script = "uid://djox8lhi7y2mb"
 
