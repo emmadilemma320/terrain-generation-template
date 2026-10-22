@@ -9,7 +9,8 @@ func _ready() -> void:
 	pass
 	
 func generate_forest() -> void:
-	pass
+	area = (2*settings.radius*PI)**2
+	print(area)
 	
 func generate_decor(type: DecorTypeSettings) -> void:
 	pass
