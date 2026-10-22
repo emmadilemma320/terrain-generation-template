@@ -1,18 +1,6 @@
 [gd_scene format=3 uid="uid://borv21mcie60f"]
 
 [ext_resource type="Script" uid="uid://cetu0hdoirgvl" path="res://Scripts/generator.gd" id="1_5a7ea"]
-[ext_resource type="Script" uid="uid://cym7y1elifhsb" path="res://Scripts/Resources/decor-type-settings.gd" id="2_8j60k"]
-[ext_resource type="Script" uid="uid://djox8lhi7y2mb" path="res://Scripts/Resources/generator-settings.gd" id="3_fo5ed"]
-
-[sub_resource type="Resource" id="Resource_8j60k"]
-script = ExtResource("2_8j60k")
-metadata/_custom_type_script = "uid://cym7y1elifhsb"
-
-[sub_resource type="Resource" id="Resource_5a7ea"]
-script = ExtResource("3_fo5ed")
-decor = Array[ExtResource("2_8j60k")]([SubResource("Resource_8j60k")])
-metadata/_custom_type_script = "uid://djox8lhi7y2mb"
 
 [node name="Generator" type="Node3D" unique_id=1996588801]
 script = ExtResource("1_5a7ea")
-settings = SubResource("Resource_5a7ea")
